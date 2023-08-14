@@ -32,7 +32,7 @@ Beschreibung: In diesem Notebook werde ich fortgeschrittene Grundlagen behandeln
         Demonstration des Einlesens von CSV-Dateien mit pandas.
    ### Erste Datenexploration:
         Anzeigen von Kopf- und Fußzeilen, zufällige Datensatzstichproben und Untersuchung der Datentypen.
-    ### Indexierung:
+   ### Indexierung:
         Greifen Sie mit Zeilen- und Spaltennummer und mit dem Zeitstempel auf den Datensatz zu.
    ### Zeitstempel als Index:
         Verwendung von Zeitstempeln als Indizes für effizientes Indexieren und Filtern von Daten.
