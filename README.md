@@ -36,3 +36,23 @@ Beschreibung: In diesem Notebook werde ich fortgeschrittene Grundlagen behandeln
         Greifen Sie mit Zeilen- und Spaltennummer und mit dem Zeitstempel auf den Datensatz zu.
    ### Zeitstempel als Index:
         Verwendung von Zeitstempeln als Indizes für effizientes Indexieren und Filtern von Daten.
+
+## Hands On Python 3 - Datenaufbereitung
+
+Beschreibung: Dieses Notebook veranschaulicht die Datenaufbereitung in Python, insbesondere:
+
+    Zusammenführen von Daten aus zwei CSV-Dateien.
+
+    Umgang mit fehlenden Werten (NaN).
+
+    Angleichen von Zeitreihen unterschiedlicher Frequenzen auf eine gemeinsame Frequenz.
+### Bibliotheken Importieren:
+        Einführung in verschiedene Bibliotheken wie pandas, numpy, matplotlib und seaborn. Einbindung von Google Colab für Laufwerkszugriff.
+###  Daten Einlesen:
+        Daten aus zwei unterschiedlichen Quellen lesen und die Dimensionen der Datensätze überprüfen.
+### Umgang mit fehlenden Werten:
+        Untersuchung auf NaNs und verschiedene Methoden zur Behandlung dieser Werte: Entfernen und Interpolieren (linear und quadratisch).
+### Zeitstempel als Index setzen:
+        Umwandlung des Zeitstempels in ein datetime-Format und Setzen dieses als Index für effizientes Arbeiten mit den Daten.
+### Zusammenführen von Datensätzen:
+        Verschiedene Ansätze zur Vereinigung zweier Datensätze mit unterschiedlichen Frequenzen: Verwendung gemeinsamer Indizes oder Resampling.
