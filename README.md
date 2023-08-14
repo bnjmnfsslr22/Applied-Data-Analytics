@@ -9,26 +9,26 @@
 
 Beschreibung: Dieses Notebook deckt grundlegende Aspekte von Jupyter Notebooks und Python ab.
 
-    ### Jupyter Notebook Zellen:
+### Jupyter Notebook Zellen:
         Das Ausführen von Zellen und die Unterscheidung zwischen Text und Code.
-    ### Die Print Funktion:
+### Die Print Funktion:
         Demonstration der print-Funktion und String-Interpolation in Python.
-    ### Kommentare in Python:
+### Kommentare in Python:
         Einzeilige und mehrzeilige Kommentare.
-    ### Operatoren und if/else Abfragen:
+### Operatoren und if/else Abfragen:
         Einführung in Bedingungsanweisungen und Logik.
-    ### Funktionen:
+### Funktionen:
         Erstellen und Verwenden benutzerdefinierter Funktionen.
-    ### Bibliotheken:
+### Bibliotheken:
         Einbindung von Bibliotheken und Zugriff auf ihre Methoden.
 
 ## Python Basics 2
 
 Beschreibung: In diesem Notebook werde ich fortgeschrittene Grundlagen behandeln, insbesondere die Datenverarbeitung und -manipulation mit Pandas.
 
-    ### Bibliothek pandas einbinden:
+   ### Bibliothek pandas einbinden:
         Einbindung der Bibliothek und erste Schritte.
-    ### Daten einlesen:
+   ### Daten einlesen:
         Demonstration des Einlesens von CSV-Dateien mit pandas.
    ### Erste Datenexploration:
         Anzeigen von Kopf- und Fußzeilen, zufällige Datensatzstichproben und Untersuchung der Datentypen.
