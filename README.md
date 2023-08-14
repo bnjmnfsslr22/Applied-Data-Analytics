@@ -40,10 +40,8 @@ Beschreibung: In diesem Notebook werde ich fortgeschrittene Grundlagen behandeln
 ## Python 3 - Datenaufbereitung
 
 Beschreibung: Dieses Notebook veranschaulicht die Datenaufbereitung in Python, insbesondere:
-
-    Zusammenführen von Daten aus zwei CSV-Dateien.
-
-    Umgang mit fehlenden Werten (NaN).
+Zusammenführen von Daten aus zwei CSV-Dateien.
+Umgang mit fehlenden Werten (NaN).
 
     Angleichen von Zeitreihen unterschiedlicher Frequenzen auf eine gemeinsame Frequenz.
 ### Bibliotheken Importieren:
