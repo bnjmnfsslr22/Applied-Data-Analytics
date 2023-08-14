@@ -37,7 +37,7 @@ Beschreibung: In diesem Notebook werde ich fortgeschrittene Grundlagen behandeln
    ### Zeitstempel als Index:
         Verwendung von Zeitstempeln als Indizes für effizientes Indexieren und Filtern von Daten.
 
-## Hands On Python 3 - Datenaufbereitung
+## Python 3 - Datenaufbereitung
 
 Beschreibung: Dieses Notebook veranschaulicht die Datenaufbereitung in Python, insbesondere:
 
@@ -56,3 +56,22 @@ Beschreibung: Dieses Notebook veranschaulicht die Datenaufbereitung in Python, i
         Umwandlung des Zeitstempels in ein datetime-Format und Setzen dieses als Index für effizientes Arbeiten mit den Daten.
 ### Zusammenführen von Datensätzen:
         Verschiedene Ansätze zur Vereinigung zweier Datensätze mit unterschiedlichen Frequenzen: Verwendung gemeinsamer Indizes oder Resampling.
+    
+## Python 4 - Zeitreihenanalyse am Beispiel von Stromverbrauchs- und Produktionsdaten
+
+Beschreibung: Dieses Notebook konzentriert sich auf die Analyse von Zeitreihen, wobei Stromverbrauchs- und Produktionsdaten als Fallbeispiel dienen.
+### Datenimport und -vorbereitung:
+    Einlesen der Daten über pandas aus Google Drive.
+    Überprüfung und Handhabung fehlender Werte (NaNs).
+    Transformation der Datumsspalte zu einem Zeitstempel und Festlegung als Index.
+    Ableitung neuer Features wie Jahr, Monat und Wochentag.
+### Statistische Analyse:
+    Erzeugung einer Korrelationsmatrix und ihre visuelle Darstellung.
+    Exploration der Daten anhand von bestimmten Zeitstempeln und Zeiträumen.
+### Visualisierung:
+    Verwendung von matplotlib und seaborn zur grafischen Darstellung von Zeitreihen.
+    Anpassungen an den Ploteinstellungen und Export der Grafiken.
+### Untersuchung der Saisonalität:
+    Analyse wiederkehrender Muster in den Daten mit Boxplots.
+    Bewertung der Saisonalität auf monatlicher Basis und Diskussion der Ergebnisse.
+
