@@ -3,7 +3,7 @@
 ## Inhaltsverzeichnis:
 
 - [1. Python Basics](#python-basics)
-- [2. Daten einlesen und indexieren](#python-basics-2)
+- [2. Daten einlesen und indexieren](#daten-einlesen-und-indexieren)
 - [3. Grundlagen der Datenaufbereitung](#python-3---datenaufbereitung)
 - [4. Datenanalyse und Zeitreihen](#python-4---zeitreihenanalyse-am-beispiel-von-stromverbrauchs--und-produktionsdaten)
 - [5. Entscheidungsbaum](#)
@@ -11,7 +11,7 @@
 
 ---
 
-## Python Basics
+## Python 1 - Basics
 
 **Beschreibung:** Dieses Notebook deckt grundlegende Aspekte von Jupyter Notebooks und Python ab.
 
@@ -24,7 +24,7 @@
 
 ---
 
-## Python Basics 2
+## Python 2 - Daten einlesen und indexieren
 
 **Beschreibung:** In diesem Notebook werde ich fortgeschrittene Grundlagen behandeln, insbesondere die Datenverarbeitung und -manipulation mit Pandas.
 
