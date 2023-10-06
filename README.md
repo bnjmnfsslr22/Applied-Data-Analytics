@@ -73,3 +73,4 @@
   - Analyse wiederkehrender Muster in den Daten mit Boxplots.
   - Bewertung der Saisonalität auf monatlicher Basis und Diskussion der Ergebnisse.
 
+## Python 5 - Entscheidungsbaum am Beispiel von Prognosemodell für den Energieverbrauch
