@@ -2,12 +2,12 @@
 
 ## Inhaltsverzeichnis:
 
-- [1. Python Basics](#python-basics)
-- [2. Daten einlesen und indexieren](#daten-einlesen-und-indexieren)
+- [1. Python Basics](#python-1---basics)
+- [2. Daten einlesen und indexieren](#python-2---daten-einlesen-und-indexieren)
 - [3. Grundlagen der Datenaufbereitung](#python-3---datenaufbereitung)
 - [4. Datenanalyse und Zeitreihen](#python-4---zeitreihenanalyse-am-beispiel-von-stromverbrauchs--und-produktionsdaten)
-- [5. Entscheidungsbaum](#)
-- [6. Neuronales Netz](#)
+- [5. Entscheidungsbaum](#python-5---entscheidungsbaum-am-beispiel-von-prognosemodell-für-den-energieverbrauch)
+- [6. Neuronales Netz](#python-6----neuronales-netz-zur-vorhersage-von-energieverbrauchsdaten)
 
 ---
 
@@ -66,70 +66,46 @@
   - Exploration der Daten anhand von bestimmten Zeitstempeln und Zeiträumen.
 
 - **Visualisierung:** 
-  - Verwendung von matplotlib und seaborn zur grafischen Darstellung von Zeitreihen.
-  - Anpassungen an den Ploteinstellungen und Export der Grafiken.
+  - Verwendung von matplotlib und seaborn zur Erstellung verschiedener Diagrammtypen: Linien-, Balken- und Heatmap-Diagramme.
 
-- **Untersuchung der Saisonalität:** 
-  - Analyse wiederkehrender Muster in den Daten mit Boxplots.
-  - Bewertung der Saisonalität auf monatlicher Basis und Diskussion der Ergebnisse.
+---
 
 ## Python 5 - Entscheidungsbaum am Beispiel von Prognosemodell für den Energieverbrauch
 
+**Beschreibung:** Dieses Notebook erklärt die Verwendung von Entscheidungsbäumen zur Vorhersage des Energieverbrauchs.
 
-**Beschreibung:** In diesem Jupyter Notebook wird der Prozess der Erstellung eines Entscheidungsbaum-Modells zur Prognose des Energieverbrauchs veranschaulicht. Hierbei wird besonders Wert auf die folgenden Aspekte gelegt:
+- **Datenpräparation:** 
+  - Einlesen der Daten, Prüfen auf NaNs und Umwandeln von Datenformaten.
+  - Ableitung neuer Features und Festlegen der Zielvariable.
+  - Aufteilung der Daten in Trainings- und Testsets.
 
-* Datenanalyse und -verarbeitung:
-    - Einlesen und Inspektion der Energieverbrauchsdaten.
-    - Indizierung nach Zeitstempel und Generierung zeitbezogener Merkmale.
-    - Aufteilung der Daten in Trainings-, Validierungs- und Testsets.
+- **Modellbildung und -evaluation:** 
+  - Erstellung eines Entscheidungsbaummodells mit scikit-learn.
+  - Anpassung des Modells an die Trainingsdaten.
+  - Vorhersage und Bewertung der Modellleistung anhand des Testsets.
+  - Visualisierung der Ergebnisse und des Entscheidungsbaums.
 
-* Modellerstellung:
-    - Verwendung der Entscheidungsbaum-Regression aus der sklearn Bibliothek.
-    - Bedeutung und Einfluss der Hyperparameter wie min_samples_split und min_samples_leaf.
-    - Training des Modells und Visualisierung des Entscheidungsbaums.
+---
 
-* Modellbewertung:
-    - Vorhersage des Energieverbrauchs und Berechnung von Gütemaßen wie MAE, MSE und MAPE.
-    - Interpretation der Ergebnisse und Verständnis der Modellleistung.
+## Python 6 - Neuronales Netz zur Vorhersage von Energieverbrauchsdaten
 
-* Optimierung:
-    - Experimentieren mit verschiedenen Hyperparametern zur Verbesserung der Modellleistung.
-    - Verständnis der Auswirkungen von Änderungen an diesen Parametern auf das Ergebnis.
-    - 
+**Beschreibung:** In diesem Notebook werde ich ein neuronales Netz zur Vorhersage von Energieverbrauchsdaten entwickeln.
 
+- **Datenpräparation:** 
+  - Einlesen der Daten und vorbereitende Schritte wie beim Entscheidungsbaum-Notebook.
+  - Normalisierung der Feature-Daten zur Verbesserung der Modellleistung.
 
-## Python 6 -  Neuronales Netz zur Vorhersage von Energieverbrauchsdaten
+- **Modellerstellung und -training:** 
+  - Definition der Netzwerkarchitektur.
+  - Kompilierung des Modells mit einem geeigneten Optimierer und Verlustfunktion.
+  - Training des Modells mit den Trainingsdaten und Validierung mit den Testdaten.
 
-**Beschreibung:** Dieses Notebook demonstriert den Einsatz eines LSTM (Long Short-Term Memory) rekurrenten neuronalen Netzwerks zur Vorhersage von Energieverbrauchsdaten. 
+- **Modellbewertung:** 
+  - Bewertung der Modellleistung anhand von Verlust- und Genauigkeitsmetriken.
+  - Visualisierung der Trainings- und Validierungsverluste zur Beurteilung der Überanpassung (overfitting).
 
-## Bibliotheken
+- **Vorhersage und Visualisierung:** 
+  - Durchführung von Vorhersagen mit dem trainierten Modell.
+  - Visualisierung der Vorhersageergebnisse im Vergleich zu den tatsächlichen Daten.
 
-Die folgenden Hauptbibliotheken werden in diesem Projekt verwendet:
-
-* **numpy** und **pandas** für Datenmanipulation
-* **matplotlib** und **seaborn** für das Plotten von Graphen
-* **scikit-learn** für Machine Learning und Daten-Preprocessing
-* **keras** und **tensorflow** für das Erstellen und Trainieren des neuronalen Netzwerks
-
-## Vorbereitung
-
-* Überprüfen und Behandeln von fehlenden Werten (NaNs)
-* Explorative Datenanalyse zur Auswahl relevanter Merkmale
-* Konvertierung der "Datum"-Spalte in den Datetime-Typ und Setzen als Index
-
-## Modellaufbau
-
-* Das Modell verwendet eine sequentielle Schichtarchitektur.
-* Mehrere LSTM-Schichten werden gestapelt, gefolgt von einer Dense-Schicht.
-* Anpassbare Parameter sind die Anzahl der LSTM-Schichten (`N_LAYER`), die Anzahl der Einheiten in jeder Schicht (`UNITS`) und die Anzahl der Zeitschritte (`TIMESTEPS`).
-
-## Training
-
-* Das Modell wird mit einer vordefinierten Anzahl von Epochen trainiert, wobei Early Stopping als Callback verwendet wird, um das Training bei Nichtverbesserung zu beenden.
-* Trainings- und Validierungsverluste werden zur Beurteilung des Modellfortschritts überwacht.
-
-## Evaluation
-
-* Der Trainingsfortschritt wird durch Plotten von Mean Squared Error (MSE) für Trainings- und Testdaten analysiert.
-* Das Modell wird auf neuen, skalierten Daten evaluiert, und die Vorhersagen werden reskaliert, um den realen Energieverbrauchswerten zu entsprechen.
-* Die Leistung wird anhand des Root Mean Squared Error (RMSE) zwischen den tatsächlichen und den vorhergesagten Werten bewertet.
+---
