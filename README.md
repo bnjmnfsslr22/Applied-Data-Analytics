@@ -74,3 +74,25 @@
   - Bewertung der Saisonalität auf monatlicher Basis und Diskussion der Ergebnisse.
 
 ## Python 5 - Entscheidungsbaum am Beispiel von Prognosemodell für den Energieverbrauch
+
+### Kurzbeschreibung
+
+In diesem Jupyter Notebook wird der Prozess der Erstellung eines Entscheidungsbaum-Modells zur Prognose des Energieverbrauchs veranschaulicht. Hierbei wird besonders Wert auf die folgenden Aspekte gelegt:
+
+* Datenanalyse und -verarbeitung:
+    - Einlesen und Inspektion der Energieverbrauchsdaten.
+    - Indizierung nach Zeitstempel und Generierung zeitbezogener Merkmale.
+    - Aufteilung der Daten in Trainings-, Validierungs- und Testsets.
+
+* Modellerstellung:
+    - Verwendung der Entscheidungsbaum-Regression aus der sklearn Bibliothek.
+    - Bedeutung und Einfluss der Hyperparameter wie min_samples_split und min_samples_leaf.
+    - Training des Modells und Visualisierung des Entscheidungsbaums.
+
+* Modellbewertung:
+    - Vorhersage des Energieverbrauchs und Berechnung von Gütemaßen wie MAE, MSE und MAPE.
+    - Interpretation der Ergebnisse und Verständnis der Modellleistung.
+
+* Optimierung:
+    - Experimentieren mit verschiedenen Hyperparametern zur Verbesserung der Modellleistung.
+    - Verständnis der Auswirkungen von Änderungen an diesen Parametern auf das Ergebnis.
