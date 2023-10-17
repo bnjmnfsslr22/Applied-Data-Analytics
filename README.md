@@ -75,9 +75,8 @@
 
 ## Python 5 - Entscheidungsbaum am Beispiel von Prognosemodell für den Energieverbrauch
 
-### Kurzbeschreibung
 
-In diesem Jupyter Notebook wird der Prozess der Erstellung eines Entscheidungsbaum-Modells zur Prognose des Energieverbrauchs veranschaulicht. Hierbei wird besonders Wert auf die folgenden Aspekte gelegt:
+**Beschreibung:** In diesem Jupyter Notebook wird der Prozess der Erstellung eines Entscheidungsbaum-Modells zur Prognose des Energieverbrauchs veranschaulicht. Hierbei wird besonders Wert auf die folgenden Aspekte gelegt:
 
 * Datenanalyse und -verarbeitung:
     - Einlesen und Inspektion der Energieverbrauchsdaten.
@@ -96,3 +95,41 @@ In diesem Jupyter Notebook wird der Prozess der Erstellung eines Entscheidungsba
 * Optimierung:
     - Experimentieren mit verschiedenen Hyperparametern zur Verbesserung der Modellleistung.
     - Verständnis der Auswirkungen von Änderungen an diesen Parametern auf das Ergebnis.
+    - 
+
+
+## Python 6 -  Neuronales Netz zur Vorhersage von Energieverbrauchsdaten
+
+**Beschreibung:** Dieses Notebook demonstriert den Einsatz eines LSTM (Long Short-Term Memory) rekurrenten neuronalen Netzwerks zur Vorhersage von Energieverbrauchsdaten. 
+
+## Bibliotheken
+
+Die folgenden Hauptbibliotheken werden in diesem Projekt verwendet:
+
+* **numpy** und **pandas** für Datenmanipulation
+* **matplotlib** und **seaborn** für das Plotten von Graphen
+* **scikit-learn** für Machine Learning und Daten-Preprocessing
+* **keras** und **tensorflow** für das Erstellen und Trainieren des neuronalen Netzwerks
+
+## Vorbereitung
+
+* Überprüfen und Behandeln von fehlenden Werten (NaNs)
+* Explorative Datenanalyse zur Auswahl relevanter Merkmale
+* Konvertierung der "Datum"-Spalte in den Datetime-Typ und Setzen als Index
+
+## Modellaufbau
+
+* Das Modell verwendet eine sequentielle Schichtarchitektur.
+* Mehrere LSTM-Schichten werden gestapelt, gefolgt von einer Dense-Schicht.
+* Anpassbare Parameter sind die Anzahl der LSTM-Schichten (`N_LAYER`), die Anzahl der Einheiten in jeder Schicht (`UNITS`) und die Anzahl der Zeitschritte (`TIMESTEPS`).
+
+## Training
+
+* Das Modell wird mit einer vordefinierten Anzahl von Epochen trainiert, wobei Early Stopping als Callback verwendet wird, um das Training bei Nichtverbesserung zu beenden.
+* Trainings- und Validierungsverluste werden zur Beurteilung des Modellfortschritts überwacht.
+
+## Evaluation
+
+* Der Trainingsfortschritt wird durch Plotten von Mean Squared Error (MSE) für Trainings- und Testdaten analysiert.
+* Das Modell wird auf neuen, skalierten Daten evaluiert, und die Vorhersagen werden reskaliert, um den realen Energieverbrauchswerten zu entsprechen.
+* Die Leistung wird anhand des Root Mean Squared Error (RMSE) zwischen den tatsächlichen und den vorhergesagten Werten bewertet.
