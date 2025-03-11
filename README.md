@@ -89,7 +89,7 @@
 
 ## Python 6 - Neuronales Netz zur Vorhersage von Energieverbrauchsdaten
 
-**Beschreibung:** In diesem Notebook werde ich ein neuronales Netz zur Vorhersage von Energieverbrauchsdaten entwickeln.
+**Beschreibung:** In diesem Notebook verwende ich ein neuronales Netz zur Vorhersage von Energieverbrauchsdaten.
 
 - **Datenpräparation:** 
   - Einlesen der Daten und vorbereitende Schritte wie beim Entscheidungsbaum-Notebook.
